@@ -2,13 +2,18 @@ package com.example.ExamenMocMCG.controller;
 
 import com.example.ExamenMocMCG.entity.Producto;
 import com.example.ExamenMocMCG.service.ProductoService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
+@RestController
+@RequestMapping
 public class ProductoController {
+
+
     @Autowired
     private ProductoService productoService;
 
